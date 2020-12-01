@@ -7,25 +7,46 @@ body {
 }
 
 nav {
+    
 	padding: 0;
 	margin: 0;
 	width: 100%;
-	height: 100vh;;
+	height: 95vh;;
+	padding: 50px;
+	margin: auto;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+  	width: 38.2%;
+	height: auto;
 	
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	border: 6px solid red;
+	
+	display: grid;
+	grid-template-columns:  61.8%  38.2%;
+	grid-template-rows: auto auto auto auto auto auto;
+	
+	grid-template-areas: 
+    "RedHead ."
+	". RedImage"
+    "RedLine1 RedImage"
+    "RedLine2 RedImage"
+	"RedLine3 RedImage"
+	"RedLine4 RedImage"
+	"RedLine5 RedImage"
+	". RedImage"
+	"RedRemark RedImage";
+
+}
+ 
+nav:hover {
+	border: 10px solid red;
 
 }
 
 main {
 	padding: 0;
 	margin: auto;
-	width: 70%;
-	
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	width: 30%;
 }
 
 img {
@@ -41,6 +62,95 @@ main p {
 	font-size: 20px;
 	max-width: 65ch;
 }
+
+.red1 {
+	grid-area: RedHead;
+}
+.red2 {
+	grid-area: RedLine1;
+}
+.red3 {
+	grid-area: RedLine2;
+}
+.red4 {
+	grid-area: RedLine3;
+}
+.red5 {
+	grid-area: RedLine4;
+}
+.red6 {
+	grid-area: RedLine5;
+}
+.red7{
+	grid-area: RedRemark;
+}
+.redImg {
+	grid-area: RedImage;
+	display: block;
+	  max-width: 400px;
+	  max-height:650px;
+	  width: auto;
+	  height: auto;
+	margin: auto;
+}
+
+ul {
+	list-style-type: none;
+
+}
+
+li {
+	border-bottom: 1px solid #171717;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #Left {
 }
@@ -92,7 +202,22 @@ main p {
   overflow-x: hidden; /* Disable horizontal scroll */
 }
 
+footer {
+	height: 5vh; /* Full-height: remove this if you want "auto" height */
+	padding-bottom: 10px;
+  	position: sticky; /* Fixed Sidebar (stay in place on scroll) */
+	top: 0;
+  	z-index: 1; /* Stay on top */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+}
 
+footer h1 {
+
+	margin: 0;
+}
 
 
 
