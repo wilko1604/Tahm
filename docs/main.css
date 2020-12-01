@@ -7,6 +7,23 @@ body {
 }
 
 nav {
+	
+	width: 50%;
+	height: 38.2%;
+	
+	background-image: url("images/red box.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+
+.red-box {
+	
+}
+
+/*
+
+nav {
     
 	padding: 0;
 	margin: 0;
@@ -16,10 +33,13 @@ nav {
 	margin: auto;
 	margin-top: 5vh;
 	margin-bottom: 5vh;
-  	width: 38.2%;
 	height: auto;
 	
-	border: 6px solid red;
+	background-image: url("images/red box.jpg");
+	height: 500px;  
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover; 
 	
 	display: grid;
 	grid-template-columns:  61.8%  38.2%;
@@ -37,11 +57,7 @@ nav {
 	"RedRemark RedImage";
 
 }
- 
-nav:hover {
-	border: 10px solid red;
-
-}
+*/
 
 main {
 	padding: 0;
@@ -51,10 +67,9 @@ main {
 
 img {
 	display: block;
-	max-height: 500px;
-	max-width: 500px;
+	max-height: 50px;
+	max-width: 50px;
 	height: auto;
-	width: 100%;
 }
 
 
