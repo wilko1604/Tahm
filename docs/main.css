@@ -11,7 +11,7 @@ nav {
 	margin: auto;
 	margin-top: 5vh;
 	margin-bottom: 5vh;
-  	width: 38.2%;
+  	max-height: 500;
 	height: auto;
 	
 	border: 6px solid red;
