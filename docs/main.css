@@ -1,114 +1,126 @@
 @charset "utf-8";
 /* CSS Document */
 
+h1, h2 {
+	font-family: rival-sans, sans-serif;
+	font-weight: 900;
+	font-style: normal;
+}
+
+h3, h4 {
+	font-family: rival-sans, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+h6 {
+	font-family: roboto, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+p {
+	font-family: roboto, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+
 body {
 	padding: 0;
 	margin: 0;
 }
 
-nav {
-	
-	width: 50%;
-	height: 38.2%;
-	
-	background-image: url("images/red box.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	
+nav {  
+	max-width: 32%;
+	margin : auto;
+	position: relative;
+  	text-align: center;
 }
 
 .red-box {
-	
+	width: 100%
 }
 
-/*
-
-nav {
-    
-	padding: 0;
-	margin: 0;
+.red-box-container {
+	position:absolute;
 	width: 100%;
-	height: 95vh;;
-	padding: 50px;
-	margin: auto;
-	margin-top: 5vh;
-	margin-bottom: 5vh;
-  	max-height: 500;
-	height: auto;
-	
-	background-image: url("images/red box.jpg");
-	height: 500px;  
-	background-position: center; 
-	background-repeat: no-repeat; 
-	background-size: cover; 
+	height: 100%;
+	padding: 30px;
+	top: 0px;
+	left:0px;
 	
 	display: grid;
-	grid-template-columns:  61.8%  38.2%;
-	grid-template-rows: auto auto auto auto auto auto;
-	
+	grid-template-columns: 60% 25%;
+	grid-template-rows: auto;
 	grid-template-areas: 
-    "RedHead ."
-	". RedImage"
-    "RedLine1 RedImage"
-    "RedLine2 RedImage"
-	"RedLine3 RedImage"
-	"RedLine4 RedImage"
-	"RedLine5 RedImage"
-	". RedImage"
-	"RedRemark RedImage";
-
+		"cont img"
 }
-*/
+.red-content {
+	grid-area: cont;
+}
+.red-box-Tmad {
+	width: 100%;
+		
+	float: right;
+	margin: auto;
+
+	padding-right: 60px;
+	padding-bottom: 30px;
+	grid-area: img;
+}
+
+.red-title {
+	font-family: rival-sans, sans-serif;
+	font-weight: 900;
+	font-style: normal;
+	font-size: 2vw;
+}
+
+.red-words {
+	font-family: "roboto";
+	font-size: 1vw;
+}
+
+.red-footnote {
+	font-family: rival-sans, sans-serif;
+	font-weight: 700;
+	font-size: 1.2vw;
+}
+
 
 main {
 	padding: 0;
 	margin: auto;
+	margin-top: 15vh;
 	width: 30%;
 }
 
-img {
-	display: block;
-	max-height: 50px;
-	max-width: 50px;
-	height: auto;
+.work_title {
 }
 
-
-main p {
-	font-size: 20px;
-	max-width: 65ch;
+.work_date {
+float: right;
+    font-size: 10px;
+    display: block;
+    line-height: 12px;
+    color: #999;
+    text-align: right;
 }
 
-.red1 {
-	grid-area: RedHead;
+li {
+    display: block;
+
 }
-.red2 {
-	grid-area: RedLine1;
+
+li a {
+    padding: 10px;
+    font-size: 18px;
+    display: block;
+    line-height: 24px;
+    text-decoration: none;
 }
-.red3 {
-	grid-area: RedLine2;
-}
-.red4 {
-	grid-area: RedLine3;
-}
-.red5 {
-	grid-area: RedLine4;
-}
-.red6 {
-	grid-area: RedLine5;
-}
-.red7{
-	grid-area: RedRemark;
-}
-.redImg {
-	grid-area: RedImage;
-	display: block;
-	  max-width: 400px;
-	  max-height:650px;
-	  width: auto;
-	  height: auto;
-	margin: auto;
-}
+
 
 ul {
 	list-style-type: none;
@@ -116,7 +128,7 @@ ul {
 }
 
 li {
-	border-bottom: 1px solid #171717;
+	border-bottom: 2px solid #333333;
 }
 
 
