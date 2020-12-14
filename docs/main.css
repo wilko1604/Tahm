@@ -13,22 +13,17 @@ h3, h4 {
 	font-style: normal;
 }
 
-h6 {
-	font-family: roboto, sans-serif;
-	font-weight: 400;
-	font-style: normal;
-}
+
 
 p {
-	font-family: roboto, sans-serif;
-	font-weight: 400;
-	font-style: normal;
+	font: 12px/15px "Courier New", Courier, monospace;
 }
 
 
 body {
 	padding: 0;
 	margin: 0;
+	font: 12px/15px "Courier New", Courier, monospace;
 }
 
 nav {  
@@ -71,21 +66,23 @@ nav {
 }
 
 .red-title {
-	font-family: rival-sans, sans-serif;
+	font-family: "Courier New", Courier, monospace;
 	font-weight: 900;
 	font-style: normal;
 	font-size: 2vw;
 }
 
 .red-words {
-	font-family: "roboto";
+	
 	font-size: 1vw;
 }
 
 .red-footnote {
-	font-family: rival-sans, sans-serif;
+	font-family: "Courier New", Courier, monospace;
 	font-weight: 700;
 	font-size: 1.2vw;
+	float: left;
+	padding-left: 15px;
 }
 
 
@@ -100,18 +97,39 @@ main {
 }
 
 .work_date {
-float: right;
-    font-size: 10px;
-    display: block;
-    line-height: 12px;
-    color: #999;
-    text-align: right;
+
 }
 
 li {
     display: block;
 
 }
+
+
+.work_list ul ul {
+    margin-left:0;
+    padding-left:0;
+	border-bottom: 2px solid #333333;
+
+}
+
+.work_list ul ul li {
+    display:table-cell;
+    list-style:none;
+}
+
+
+.work_list ul li:first-child {
+    color: red;
+    list-style-position: inside;
+    padding-right:50px;	
+
+}
+.work_list  ul li:last-child {
+    white-space:nowrap;
+
+}
+
 
 li a {
     padding: 10px;
@@ -123,12 +141,13 @@ li a {
 
 
 ul {
+	padding-inline-start: 0px;
 	list-style-type: none;
 
 }
 
 li {
-	border-bottom: 2px solid #333333;
+	
 }
 
 
